@@ -6,6 +6,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
+import java.util.UUID;
 
 import org.apache.commons.io.FileUtils;
 
@@ -22,7 +23,7 @@ public class FunctionHostId {
 
                 if (hostId == null || !hostId.exists()) {
                     try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path), "UTF-8"))) {
-                        String instanceId = String.format("%06d", (int) (Math.random() * 1000000));
+                        String instanceId = UUID.randomUUID().toString();
                         System.out.println("HostId generated: " + instanceId);
 
                         writer.write(instanceId);
