@@ -3,3 +3,5 @@ This repo contains the serverless cloud function implementations of Fibonacci ca
 
 * Please refer to [FunctionImplementation](FunctionImplementation) for function implementation
 * Please refer to [ClientProgram](ClientProgram) for testing client implementation
+
+Cite the code: [![DOI](https://zenodo.org/badge/390104674.svg)](https://zenodo.org/badge/latestdoi/390104674)
