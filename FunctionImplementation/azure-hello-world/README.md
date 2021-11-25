@@ -1,10 +1,5 @@
-# ms-fibonacci-function
-Microsoft Azure Fibonacci Implementation
-
-This repository folder contains the function implementation of Fibonacci nth number calculation implemented on Microsoft Azure Cloud Function.
-
-* The calculation logic is performed recursively with fib(n) = fib(n-1) + f(n-2)
-* Note that the maven project should be built with Java **8**
+This repository contains the Hello World cloud function implementation for IBM Cloud Platform. The Hello World function receive a request and send back an echo message.
+* Note that the maven project should be built with Java version 8 and above
 * Build command line:
 ```
 mvn clean package

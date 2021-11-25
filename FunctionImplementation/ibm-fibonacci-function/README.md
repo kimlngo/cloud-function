@@ -18,3 +18,10 @@ ibmcloud fn action create fibonacci-function target/ibm.fibonacci-1.0.0-SNAPSHOT
 ```
 ibmcloud fn action update fibonacci-function target/ibm.fibonacci-1.0.0-SNAPSHOT.jar --main com.kimlngo.fibonacci.FibonacciFunction#process
 ```
+
+* Note: function memory can be configured by either using the [IBM Function Management Webpage](https://cloud.ibm.com/functions) or re-run the update command with a new memory option added
+
+For example:
+```
+ibmcloud fn action update hello-world-function target/ibm-hello-world-1.0.0-SNAPSHOT.jar --memory 1024 --main ibm.faas.HelloWorldFunction#process
+```
